@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const swiper = new Swiper(".mySwiper", {
-    cssMode: true,
+    lazy: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -9,7 +9,18 @@ $(document).ready(function () {
       el: ".swiper-pagination",
       clickable: true,
     },
-    mousewheel: true,
-    keyboard: true,
+  });
+
+
+  const reviewsBlockSlider = new Swiper(".reviewsBlockSlider", {
+    lazy: true,
+    navigation: {
+      nextEl: ".swiper-button-next2",
+      prevEl: ".swiper-button-prev2",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 });
