@@ -23,4 +23,15 @@ $(document).ready(function () {
       clickable: true,
     },
   });
+
+
+  const newsSlider = new Swiper(".newsSlider", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    lazy: true,
+    navigation: {
+      nextEl: ".swiper-button-next3",
+      prevEl: ".swiper-button-prev3",
+    },
+  });
 });

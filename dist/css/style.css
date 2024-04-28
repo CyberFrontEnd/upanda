@@ -607,6 +607,8 @@ Start about
   background: red !important;
 }
 
+.swiper-button-next3,
+.swiper-button-prev3,
 .swiper-button-next2,
 .swiper-button-prev2 {
   position: absolute;
@@ -636,6 +638,28 @@ Start about
   border: 3px solid #ffffff;
   border-top: none;
   border-left: none;
+}
+
+.swiper-button-next3 {
+  right: -60px;
+  transform: rotate(317deg);
+}
+
+.SwipeNav {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 100%;
+}
+
+.swiper-button-prev3 {
+  transform: rotate(137deg);
+  left: -55px;
+}
+
+.swiper-button-next3.swiper-button-disabled,
+.swiper-button-prev3.swiper-button-disabled {
+  opacity: 0;
 }
 
 /*
@@ -715,6 +739,79 @@ Start reviews
 /*
 End reviews
 #########*/
+
+/*
+Start news
+##########*/
+.news {
+  max-width: 1420px;
+  width: 100%;
+  margin: 65px auto 50px;
+  position: relative;
+}
+
+.newsSliderContent {
+  background: #ffeeb8;
+  max-width: 335px;
+  width: 100%;
+  padding: 20px 10px 10px;
+}
+
+.newsSliderContent > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.newsSliderContent > a img {
+  display: block;
+  width: 305px;
+  height: 305px;
+  object-fit: cover;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsSlider__title {
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #173c00;
+  font-size: 36px;
+  font-weight: normal;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+.news__date {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.newsSliderContent > a.news__href {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 13px;
+  display: block;
+  text-align: right;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+
+.SwipeNav {
+  position: absolute;
+}
+
+/*
+End news
+########*/
 
 /*
 Start footer
