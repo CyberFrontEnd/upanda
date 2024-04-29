@@ -607,6 +607,8 @@ Start about
   background: red !important;
 }
 
+.swiper-button-next4,
+.swiper-button-prev4,
 .swiper-button-next3,
 .swiper-button-prev3,
 .swiper-button-next2,
@@ -620,6 +622,7 @@ Start about
   border-left: none;
 }
 
+.swiper-button-next4,
 .swiper-button-next2 {
   transform: rotate(-45deg);
 }
@@ -640,6 +643,14 @@ Start about
   border-left: none;
 }
 
+.swiper-button-next4 {
+  right: 3%;
+}
+
+.locationMobilSlider .aboutSwipeNav {
+  top: 48%;
+}
+
 .swiper-button-next3 {
   right: -60px;
   transform: rotate(317deg);
@@ -657,9 +668,16 @@ Start about
   left: -55px;
 }
 
+.swiper-button-next4.swiper-button-disabled,
+.swiper-button-prev4.swiper-button-disabled,
 .swiper-button-next3.swiper-button-disabled,
 .swiper-button-prev3.swiper-button-disabled {
   opacity: 0;
+}
+
+.swiper-button-prev4 {
+  transform: rotate(140deg);
+  left: 3%;
 }
 
 /*
@@ -879,3 +897,828 @@ Start footer
 /*
 End footer
 ############*/
+.mobilBtn {
+  width: 30px;
+  background: none;
+  border-top: 3px solid #a7a761;
+  padding-top: 4px;
+  position: absolute;
+  right: 15px;
+  display: none;
+}
+
+.mobilBtn:after,
+.mobilBtn:before {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #a7a761;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.locationMobil {
+  display: none;
+}
+
+.mobilSup {
+  max-width: 95%;
+  width: 100%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.mobilSupItem {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.mobilSupItem:nth-child(even) .mobilSupItemText__text,
+.mobilSupItem:nth-child(even) .mobilSupItemText__title {
+  text-align: right;
+}
+
+.mobilSupItemText {
+  max-width: 85%;
+  width: 100%;
+}
+
+.mobilSupItemText__title {
+  color: #173c00;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.mobilSupItemText__text {
+  color: #000;
+  font-size: 16px;
+}
+
+/*
+Start responsive
+#################*/
+@media (max-width: 1500px) {
+  .news,
+  .about {
+    max-width: 85%;
+  }
+
+  .aboutRight {
+    max-width: 48%;
+  }
+
+  .aboutRight__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .reviewsBlockSlider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .reviewsBlock {
+    justify-content: center;
+  }
+
+  .aboutRight {
+    max-width: 44%;
+  }
+
+  .price,
+  .header {
+    max-width: 95%;
+  }
+
+  .priceList li {
+    max-width: 29%;
+  }
+
+  .priceListContent {
+    min-height: 440px;
+    height: 100%;
+  }
+
+  .headerRight__tel,
+  .headerMenu li a {
+    font-size: 16px;
+  }
+
+  .headerMenu {
+    max-width: 50%;
+  }
+
+  .headerRight {
+    max-width: 25%;
+  }
+
+  .headerRightList {
+    width: 40%;
+  }
+
+  .priceList li {
+    max-width: 32%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .newsSliderContent > a {
+    font-size: 25px;
+  }
+
+  .news__date {
+    font-size: 18px;
+  }
+
+  .newsSliderContent > a img {
+    height: 197px;
+  }
+}
+
+@media (max-width: 1290px) {
+  .location,
+  .footerBottomIn,
+  .footerTopIn {
+    max-width: 95%;
+  }
+
+  .reviews {
+    background: #ffeeb8;
+  }
+
+  .aboutLeft {
+    max-width: 50%;
+  }
+
+  .locationList > li {
+    max-width: 32%;
+    margin-right: 2%;
+  }
+
+  .locationHref li a {
+    width: 100%;
+  }
+
+  .locationHref li {
+    max-width: 47%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .locationList li figure img {
+    height: 330px;
+  }
+
+  .locationHref li a {
+    font-size: 14px;
+  }
+
+  .locationList__price {
+    font-size: 35px;
+  }
+
+  .locationList__text {
+    font-size: 16px;
+  }
+
+  .locationList__title {
+    font-size: 25px;
+  }
+
+  .about .price__h2 {
+    font-size: 50px;
+    padding-bottom: 100px;
+  }
+
+  .aboutRight__text {
+    font-size: 16px;
+  }
+
+  .aboutRight__btn {
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .priceList__text {
+    font-size: 16px;
+  }
+
+  .priceList__price {
+    font-size: 35px;
+  }
+
+  .priceList__title {
+    font-size: 30px;
+  }
+
+  .headerRight__tel, .headerMenu li a {
+    font-size: 14px;
+  }
+
+  .headerMenu {
+    max-width: 45%;
+  }
+
+  .headerRightList {
+    width: 46%;
+  }
+
+  .partner {
+    max-width: 95%;
+  }
+
+  .partner__title {
+    font-size: 30px;
+  }
+
+  .partnerList li {
+    max-width: 32%;
+  }
+
+  .partnerList__h3 {
+    font-size: 18px;
+  }
+
+  .partnerList__text {
+    font-size: 16px;
+  }
+
+  .reviews .price__h2 {
+    font-size: 50px;
+  }
+
+  .newsSliderContent > a {
+    font-size: 20px;
+  }
+
+  .price__h2 {
+    font-size: 50px;
+  }
+
+  .news {
+    max-width: 75%;
+  }
+
+  .swiper-button-next3, .swiper-button-prev3, .swiper-button-next2, .swiper-button-prev2 {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 960px) {
+  .locationList__text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .locationList li figure img {
+    height: 264px;
+  }
+
+  .locationHref li {
+    max-width: 49%;
+  }
+
+  .locationHref li a {
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .reviews {
+    height: 500px;
+  }
+
+  .aboutLeft {
+    max-width: 45%;
+  }
+
+  .aboutRight__btn {
+    margin-top: 50px;
+  }
+
+  .headerRight {
+    max-width: 30%;
+  }
+
+  .priceList__title {
+    font-size: 25px;
+  }
+
+  .priceList__desc {
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .priceList__price {
+    font-size: 30px;
+  }
+
+  .price__h2 {
+    font-size: 50px;
+    padding-bottom: 100px;
+  }
+
+  .priceList__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .priceList a {
+    font-size: 22px;
+  }
+
+  .reviewsBlockSliderRight {
+    max-width: 80%;
+  }
+
+  .reviewsBlockSliderContent img {
+    width: 15%;
+    height: 15%;
+  }
+
+  .reviewsBlockSliderRight__title {
+    font-size: 25px;
+  }
+
+  .reviewsBlockSliderRight__text {
+    font-size: 18px;
+  }
+
+  .reviewsBlockSlider {
+    max-width: 80%;
+  }
+
+  .reviewsBlock .aboutSwipeNav {
+    max-width: 80%;
+  }
+
+  .swiper-button-next2, .swiper-button-prev2 {
+    width: 35px;
+    height: 35px;
+  }
+
+  .newsSliderContent > a img {
+    height: 170px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footerTopLeft__title {
+    font-size: 60px;
+  }
+
+  .newsSliderContent > a img {
+    height: 150px;
+  }
+
+  .footerTopLeft__num {
+    font-size: 25px;
+  }
+
+  .footerTopLeft__email {
+    font-size: 25px;
+  }
+
+  .footerTopIn > img {
+    width: 45%;
+  }
+
+  .reviews .price__h2 {
+    font-size: 40px;
+  }
+
+  .reviewsBlock .aboutSwipeNav {
+    max-width: 75%;
+  }
+
+  .aboutLeft,
+  .aboutRight {
+    max-width: 100%;
+  }
+
+  .aboutSwipeNav .swiper-button-next {
+    right: 2% !important;
+  }
+
+  .aboutSwipeNav .swiper-button-prev {
+    left: 2% !important;
+  }
+
+  .about .price__h2 {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutRight__text {
+    padding-top: 20px;
+  }
+
+  .about {
+    max-width: 95%;
+  }
+
+  .aboutRight__btn {
+    margin-top: 30px;
+  }
+
+  .about {
+    position: relative;
+  }
+
+  .mySwiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .partner__title {
+    font-size: 25px;
+  }
+
+  .headerMenu {
+    max-width: 55%;
+  }
+
+  .headerRight {
+    max-width: 120px;
+    flex-direction: column;
+  }
+
+  .headerRightList {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .logoHeader {
+    display: block;
+    width: 22%;
+  }
+
+  .banner {
+    height: 450px;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .locationList li figure img {
+    height: 230px;
+  }
+
+  .price__h2 {
+    font-size: 40px;
+    height: 40px;
+    padding-bottom: 80px;
+  }
+
+  .newsSliderContent > a img {
+    height: 244px;
+  }
+
+  .priceListContent {
+    padding: 20px 10px;
+    min-height: 360px;
+  }
+
+  .priceList__price {
+    font-size: 25px;
+  }
+
+  .priceList a {
+    font-size: 20px;
+  }
+
+  .priceList__title {
+    font-size: 20px;
+    height: 52px;
+  }
+
+  .priceList__text {
+    font-size: 14px;
+  }
+
+  .about .price__h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 670px) {
+  .reviews .price__h2,
+  .about .price__h2 {
+    font-size: 30px;
+  }
+
+  .reviewsBlockSliderRight__text {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  .mobilSup,
+  .locationMobil {
+    display: block;
+  }
+
+  .price__h2 {
+    font-size: 30px;
+  }
+
+  .location,
+  .partnerList {
+    display: none;
+  }
+
+  .partner__title {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+
+  .footerTopLeft__title {
+    font-size: 50px;
+  }
+
+  .footerTopLeft__email,
+  .footerTopLeft__num {
+    font-size: 20px;
+  }
+
+  .footerTopLeft__num {
+    margin-top: 20px;
+  }
+
+  .locationMobilSlider {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .locationMobilSliderContent {
+    border: 2px solid #a7a761;
+    border-radius: 15px;
+    max-width: 390px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+
+  .locationMobilSlider .locationList__text {
+    display: none;
+  }
+
+  .locationMobilSlider {
+    padding-bottom: 60px !important;
+  }
+
+  .locationMobilSlider .swiper-pagination-bullet {
+    border: 4px solid #173c00;
+  }
+
+  .mobilSupItemText {
+    max-width: 68%;
+  }
+
+  .mobilSupItem img {
+    width: 26%;
+  }
+}
+
+@media (max-width: 620px) {
+  .newsSliderContent > a img {
+    height: 190px;
+  }
+
+  .reviews {
+    height: 550px;
+  }
+
+  .reviewsBlockSliderRight__text {
+    max-height: 225px;
+  }
+
+  .price__h2 {
+    font-size: 40px;
+  }
+
+  .priceList li {
+    max-width: 48%;
+    margin-bottom: 30px;
+  }
+
+  .headerMenu {
+    display: none;
+  }
+
+  .logoHeader {
+    width: 170px;
+  }
+
+  .headerRight {
+    margin-right: 10%;
+  }
+
+  .mobilBtn {
+    display: block;
+  }
+
+  .banner {
+    height: 350px;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .mobilSupItemText__title {
+    font-size: 20px;
+  }
+
+  .mobilSupItemText__text {
+    font-size: 14px;
+  }
+
+  .footerTopLeft__title {
+    font-size: 40px;
+  }
+
+  .footerTopIn > img {
+    width: 40%
+  }
+
+  .footerBottom__text {
+    font-size: 12px;
+  }
+
+  .newsSlider {
+    max-width: 335px;
+  }
+
+  .swiper-button-prev3 {
+    left: -30px;
+  }
+
+  .swiper-button-next3 {
+    right: -36px;
+  }
+
+  .newsSliderContent > a img {
+    height: auto;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    border: 2px solid #ffffff;
+  }
+
+  .aboutRight__text {
+    max-width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about .price__h2 {
+    font-size: 30px;
+  }
+
+  .partner__title {
+    font-size: 18px;
+  }
+
+  .reviews .price__h2 {
+    font-size: 30px;
+  }
+
+  .reviewsBlock .aboutSwipeNav {
+    max-width: 70%;
+  }
+
+  .locationMobilSlider .swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .price__h2 {
+    font-size: 30px;
+  }
+
+  .locationMobilSlider {
+    max-width: 1090%;
+  }
+
+  .locationMobilSliderContent {
+    padding: 15px;
+    max-width: 310px;
+  }
+
+  .swiper-button-next4, .swiper-button-prev4 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .swiper-button-next3 {
+    right: -26px;
+  }
+
+  .swiper-button-next2, .swiper-button-prev2 {
+    width: 25px;
+    height: 25px;
+  }
+
+  .reviewsBlock .aboutSwipeNav {
+    max-width: 60%;
+  }
+
+  .reviewsBlockSliderRight__text {
+    font-size: 16px;
+  }
+
+  .priceList li {
+    max-width: 100%;
+  }
+
+  .price {
+    max-width: 350px;
+  }
+
+  .priceList__title {
+    font-size: 25px;
+  }
+
+  .priceList__desc {
+    font-size: 20px;
+  }
+
+  .priceList__price {
+    font-size: 30px;
+  }
+
+  .priceList__text {
+    font-size: 18px;
+  }
+
+  .headerRight {
+    margin-right: 15%;
+  }
+
+  .banner {
+    height: 280px;
+  }
+
+  .footerTopLeft__title {
+    font-size: 30px;
+  }
+
+  .footerTopLeft__email, .footerTopLeft__num {
+    font-size: 16px;
+  }
+
+  .footerTopList {
+    width: 160px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footerTopIn > img {
+    width: 30%;
+  }
+
+  .price {
+    max-width: 90%;
+  }
+
+  .priceList__text {
+    font-size: 16px;
+  }
+
+  .priceList__title {
+    font-size: 20px;
+  }
+
+  .logoHeader {
+    width: 120px
+  }
+
+  .mobilBtn {
+    right: 5px;
+  }
+}

@@ -33,5 +33,42 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next3",
       prevEl: ".swiper-button-prev3",
     },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      540: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1100: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+
+  const locationMobilSlider = new Swiper(".locationMobilSlider", {
+    lazy: true,
+    navigation: {
+      nextEl: ".swiper-button-next4",
+      prevEl: ".swiper-button-prev4",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+    },
   });
 });
