@@ -161,21 +161,28 @@ a:hover {
 input[type="text"]::-webkit-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 300;
 }
 
 input[type="text"]::-moz-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
-}
-
-input[type="text"]:-moz-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 300;
 }
 
 input[type="text"]:-ms-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 300;
 }
 
 input[type="text"]:focus::-webkit-input-placeholder {
@@ -266,6 +273,7 @@ Start banner
 #############*/
 .banner {
   margin: 0 auto;
+  position: relative;
 }
 
 .banner img {
@@ -451,11 +459,11 @@ Start location
   margin-right: 0;
 }
 
-.locationList li figure img {
+.locationList li img {
   width: 395px;
   height: 395px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 25px;
   display: block;
 }
 
@@ -1141,9 +1149,385 @@ End footer
 }
 
 /*
+Start questions
+#############*/
+.questions {
+  width: 100%;
+}
+
+.questionsList {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.metismenu {
+  max-width: 70%;
+  width: 100%;
+}
+
+.metismenu > li {
+  max-width: 1030px;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.metismenu > li > a {
+  width: 100%;
+  display: block;
+  color: #173c00;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.metismenu .has-arrow::before,
+.metismenu .has-arrow::after {
+  right: 0 !important;
+  width: .7em !important;
+  border-width: 4px 0 0 0 !important;
+  transform: rotate(0) !important;
+}
+
+.metismenu .has-arrow::before {
+  position: absolute;
+  content: "";
+  border-style: solid;
+  border-color: initial;
+  transform-origin: top;
+  top: 54%;
+  right: -2px !important;
+  transition: all .3s ease-out;
+  transform: rotate(90deg) !important;
+}
+
+.metismenu .mm-active .has-arrow::before {
+  opacity: 0;
+}
+
+.questionsList__num {
+  max-width: 25%;
+  width: 100%;
+}
+
+.questionsList__num li {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.questionsList__num li span {
+  background: #ffeeb8;
+  font-size: 50px;
+  font-weight: bold;
+  color: #173c00;
+  width: 100%;
+  display: block;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.metismenu__text {
+  color: #000;
+  font-size: 20px;
+}
+
+/*
+End questions
+############*/
+
+/*
+Start toBook
+###########*/
+.toBook {
+  background: #ffeeb8;
+  margin-bottom: 200px;
+  margin-top: 150px;
+}
+
+.toBookIn {
+  max-width: 1340px;
+  width: 100%;
+  margin: 100px auto 50px;
+  justify-content: space-between;
+}
+
+.toBookLeft {
+  max-width: 730px;
+  width: 100%;
+  border: 2px solid #325116;
+  position: relative;
+  top: -50px;
+}
+
+.toBookLeft__title {
+  text-transform: uppercase;
+  color: #173c00;
+  font-size: 80px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 20px;
+}
+
+.toBookLeft img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.toBookLeft__title:last-child {
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+.toBookForm {
+  background: #173c00;
+  max-width: 575px;
+  width: 100%;
+}
+
+.toBookFormIn {
+  max-width: 470px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toBookFormInput {
+  margin-top: 20px;
+}
+
+.toBookFormInput label {
+  text-transform: uppercase;
+  color: #ffeeb8;
+  font-size: 22px;
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.toBookFormInput input {
+  max-width: 100%;
+  width: 100%;
+  height: 45px;
+  border: none;
+  background: #ffeeb8;
+  padding-left: 20px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  color: #6e6e6e;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#calendar {
+  background: #ffeeb8 url('../images/icon4.png') no-repeat 97% 40%;
+}
+
+.basket__number {
+  position: relative;
+  left: 20px;
+}
+
+.basket__number input {
+  width: 170px;
+  text-align: center;
+  padding-left: 0;
+}
+
+.basket__number span {
+  font-size: 22px;
+  color: #ffeeb8;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+/*
+Start selects
+$$$$$$$$$$$$$*/
+.ms-parent {
+  width: 100% !important;
+}
+
+.ms-parent .ms-choice {
+  height: 50px !important;
+  border: none !important;
+  background: #ffeeb8 !important;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.ms-parent .ms-choice span {
+  height: 50px !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  color: #000000;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 300 !important;
+}
+
+.ms-drop ul > li span {
+  color: #000 !important;
+}
+
+.ms-drop ul > li.hide-radio.selected {
+  background: #ffeeb8 !important;
+}
+
+.toBookForm__submit {
+  background: #ff3c00;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.ms-choice > div.icon-caret {
+  border-color: #000000 transparent transparent transparent !important;
+  border-width: 9px 8px 0 8px !important;
+}
+
+.blockCheckbox {
+  margin-top: 20px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.blockCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffeeb8;
+}
+
+.blockCheckbox input:checked ~ .checkmark {
+  background-color: #ffeeb8;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.blockCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.blockCheckbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #173c00;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.blockCheckbox__title {
+  color: #ffeeb8;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.blockCheckbox__href {
+  color: #ffeeb8;
+  font-size: 11px;
+  border-bottom: 1px solid;
+  text-transform: uppercase;
+}
+
+/*
+End toBook
+##########*/
+
+.toBookMobil__title {
+  text-transform: uppercase;
+  color: #173c00;
+  font-size: 37px;
+  font-weight: 300;
+  display: none;
+  text-align: center;
+}
+
+.banner__href {
+  position: absolute;
+  top: 350px;
+  width: auto;
+  right: -147px;
+  z-index: 1;
+  padding: 5px 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #173c00;
+  transform: rotate(-90deg);
+}
+
+.banner__href span {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 33px;
+  font-weight: 500;
+}
+
+/*
 Start responsive
 #################*/
 @media (max-width: 1500px) {
+  .questionsList__num {
+    max-width: 30%;
+  }
+
+  .metismenu {
+    max-width: 60%;
+  }
+
+  .questionsList {
+    width: 90%;
+  }
+
   .news,
   .about {
     max-width: 85%;
@@ -1159,6 +1543,30 @@ Start responsive
 }
 
 @media (max-width: 1450px) {
+  .banner__href {
+    top: 250px;
+  }
+
+  .toBookLeft {
+    max-width: 50%;
+  }
+
+  .toBookIn {
+    max-width: 90%;
+  }
+
+  .toBookLeft__title {
+    font-size: 50px;
+  }
+
+  .toBookLeft img {
+    width: 90%;
+  }
+
+  .toBookForm {
+    max-width: 47%;
+  }
+
   .reviewsBlockSlider {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -1209,6 +1617,47 @@ Start responsive
 }
 
 @media (max-width: 1350px) {
+  .newsImg {
+    width: 40%;
+  }
+
+  .newsImg:before {
+    width: 100%;
+    height: 94%;
+  }
+
+  .newsText {
+    max-width: 55%;
+  }
+
+  .newsContent,
+  .newsTitle__title,
+  .contactLocation,
+  .contactInfo,
+  .bread {
+    max-width: 90%;
+  }
+
+  .newsTitle__title {
+    font-size: 40px;
+  }
+
+  .contactLocationList li a {
+    font-size: 25px;
+  }
+
+  .metismenu > li > a {
+    font-size: 30px;
+  }
+
+  .questionsList__num li span {
+    font-size: 43px;
+  }
+
+  .metismenu {
+    max-width: 65%;
+  }
+
   .newsSliderContent > a {
     font-size: 25px;
   }
@@ -1223,6 +1672,48 @@ Start responsive
 }
 
 @media (max-width: 1290px) {
+  .banner__href {
+    top: 200px;
+    right: -117px;
+  }
+
+  .banner__href span {
+    font-size: 25px;
+  }
+
+  .toBookFormInput {
+    max-width: 90%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .toBookFormInput label {
+    font-size: 18px;
+  }
+
+  .toBookForm__submit {
+    max-width: 90%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+
+  .blockCheckbox {
+    max-width: 90%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blockCheckbox__title {
+    font-size: 11px;
+  }
+
   .location,
   .footerBottomIn,
   .footerTopIn {
@@ -1253,7 +1744,15 @@ Start responsive
 }
 
 @media (max-width: 1100px) {
-  .locationList li figure img {
+  .metismenu > li > a {
+    font-size: 25px;
+  }
+
+  .questionsList__num li span {
+    font-size: 37px;
+  }
+
+  .locationList li img {
     height: 330px;
   }
 
@@ -1354,12 +1853,59 @@ Start responsive
 }
 
 @media (max-width: 960px) {
+  .contactLocationList li a {
+    font-size: 20px;
+  }
+
+  .bread li span,
+  .bread li a,
+  .contactLocation__title {
+    font-size: 25px;
+  }
+
+  .banner__href {
+    top: 170px;
+  }
+
+  .toBookMobil__title {
+    display: block;
+    padding: 50px 0;
+  }
+
+  .toBookIn {
+    margin: 0 auto;
+  }
+
+  .toBook {
+    margin-top: 100px;
+    padding-bottom: 30px;
+    margin-bottom: 150px;
+  }
+
+  .toBookLeft {
+    display: none;
+  }
+
+  .toBookForm {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .questionsList__num {
+    max-width: 20%;
+  }
+
+  .metismenu {
+    max-width: 76%;
+  }
+
   .locationList__text {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .locationList li figure img {
+  .locationList li img {
     height: 264px;
   }
 
@@ -1416,12 +1962,16 @@ Start responsive
   }
 
   .reviewsBlockSliderRight {
-    max-width: 80%;
+    max-width: 75%;
   }
 
   .reviewsBlockSliderContent img {
-    width: 15%;
-    height: 15%;
+    width: 75%;
+    height: 75%;
+  }
+
+  .reviewsBlockSliderContent picture {
+    width: 25%;
   }
 
   .reviewsBlockSliderRight__title {
@@ -1451,6 +2001,42 @@ Start responsive
 }
 
 @media (max-width: 800px) {
+  .newsTitle__title {
+    font-size: 35px;
+  }
+
+  .newsImg:before {
+    height: 90%;
+  }
+
+  .questionsList {
+    width: 90%;
+  }
+
+  .price__h2 {
+    font-size: 40px;
+  }
+
+  .questionsList__num li {
+    margin-bottom: 20px;
+  }
+
+  .metismenu > li > a {
+    font-size: 22px;
+  }
+
+  .questionsList__num li span {
+    font-size: 35px;
+  }
+
+  .metismenu .has-arrow::before {
+    top: 58%;
+  }
+
+  .metismenu__text {
+    font-size: 16px;
+  }
+
   .footerTopLeft__title {
     font-size: 60px;
   }
@@ -1557,7 +2143,19 @@ Start responsive
 }
 
 @media (max-width: 750px) {
-  .locationList li figure img {
+  .contactLocationList li a {
+    font-size: 16px;
+  }
+
+  .map iframe {
+    height: 500px;
+  }
+
+  .toBookForm {
+    max-width: 90%;
+  }
+
+  .locationList li img {
     height: 230px;
   }
 
@@ -1599,6 +2197,26 @@ Start responsive
 }
 
 @media (max-width: 670px) {
+  .newsTitle__title {
+    font-size: 20px;
+  }
+
+  .newsText {
+    max-width: 100%;
+  }
+
+  .newsImg {
+    width: 60%;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .newsText__text {
+    font-size: 16px;
+  }
+
+  .toBookMobil__title,
   .reviews .price__h2,
   .about .price__h2 {
     font-size: 30px;
@@ -1676,9 +2294,39 @@ Start responsive
   .mobilSupItem img {
     width: 26%;
   }
+
+  .questionsList__num {
+    max-width: 10%;
+  }
+
+  .questionsList__num li span {
+    padding-right: 20px;
+  }
+
+  .metismenu {
+    max-width: 85%;
+  }
+
+  .questionsList {
+    width: 98%;
+  }
 }
 
 @media (max-width: 620px) {
+  .contactLocationList li {
+    width: 100%;
+  }
+
+  .contactLocation {
+    margin-bottom: 50px;
+  }
+
+  .banner__href {
+    top: 152px;
+    padding: 5px 10px;
+    right: -98px;
+  }
+
   .newsSliderContent > a img {
     height: 190px;
   }
@@ -1724,9 +2372,17 @@ Start responsive
     width: 100%;
     height: 100%;
   }
+
+  .questions .price__h2 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 540px) {
+  .toBookForm {
+    max-width: 100%;
+  }
+
   .mobilSupItemText__title {
     font-size: 20px;
   }
@@ -1814,9 +2470,53 @@ Start responsive
     width: 30px;
     height: 30px;
   }
+
+  .metismenu > li > a {
+    font-size: 16px;
+  }
+
+  .questionsList__num li span {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+
+  .metismenu > li {
+    margin-bottom: 24px;
+  }
+
+  .questionsList__num {
+    max-width: 7%;
+  }
+
+  .metismenu .has-arrow::before,
+  .metismenu .has-arrow::after {
+    border-width: 2px 0 0 0 !important;
+  }
+
+  .metismenu .has-arrow::before {
+    right: -1px !important;
+  }
 }
 
 @media (max-width: 450px) {
+  .banner__href {
+    top: 120px;
+    right: -79px;
+  }
+
+  .banner__href span {
+    font-size: 20px;
+  }
+
+  .toBookFormInput label {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .toBookIn {
+    max-width: 100%;
+  }
+
   .swiper-button-next3 {
     right: -26px;
   }
@@ -1880,6 +2580,30 @@ Start responsive
 }
 
 @media (max-width: 380px) {
+  .questions .price__h2 {
+    font-size: 20px;
+  }
+
+  .metismenu > li > a {
+    font-size: 13px;
+  }
+
+  .questionsList__num li {
+    margin-bottom: 14px;
+  }
+
+  .questionsList__num li span {
+    font-size: 21px;
+  }
+
+  .metismenu .has-arrow::before {
+    top: 9px;
+  }
+
+  .metismenu {
+    max-width: 90%;
+  }
+
   .footerTopIn > img {
     width: 30%;
   }
