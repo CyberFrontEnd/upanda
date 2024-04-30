@@ -1,4 +1,13 @@
 $(document).ready(function () {
+  $('.mobilBtn').on('click', function () {
+    $('.mobilMenu').slideDown();
+  });
+
+  $('.mobilBtn__closed').on('click', function () {
+    $('.mobilMenu').slideUp();
+  });
+
+  
   const swiper = new Swiper(".mySwiper", {
     lazy: true,
     navigation: {
