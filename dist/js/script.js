@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
   $('.mobilBtn').on('click', function () {
     $('.mobilMenu').slideDown();
   });
@@ -143,4 +145,7 @@ $(document).ready(function () {
 
 
   $('.select').multipleSelect({});
+
+
+
 });

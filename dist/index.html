@@ -13,10 +13,11 @@
     <link href="css/calendar.css" rel="stylesheet">
     <link href="css/intlTelInput.css" rel="stylesheet">
     <link href="css/multi-selects.css" rel="stylesheet">
+    <link href="css/fancybox.css" rel="stylesheet">
 
     <title>Главная</title>
 </head>
-<body>
+<body id="up">
 
 <!--Start header-->
 <header class="header flex">
@@ -24,23 +25,23 @@
 
     <ul class="flex headerMenu">
         <li>
-            <a href="#">О нас</a>
+            <a href="#about">О нас</a>
         </li>
 
         <li>
-            <a href="#">маршрут</a>
+            <a href="#location">маршрут</a>
         </li>
 
         <li>
-            <a href="#">sup-поход</a>
+            <a href="#toBook">sup-поход</a>
         </li>
 
         <li>
-            <a href="#">цены</a>
+            <a href="#price">цены</a>
         </li>
 
         <li>
-            <a href="#">Контакты</a>
+            <a href="#contact">Контакты</a>
         </li>
     </ul>
 
@@ -77,22 +78,24 @@
 
     <ul class="mobilMenuIn">
         <li>
-            <a href="#">О нас</a>
+            <a href="#about">О нас</a>
         </li>
 
         <li>
-            <a href="#">Маршруты</a>
+            <a href="#location">Маршруты</a>
         </li>
 
         <li>
-            <a href="#">sup-поход</a>
+            <a href="#toBook">sup-поход</a>
         </li>
 
         <li>
-            <a href="#">цены</a>
+            <a href="#price">цены</a>
         </li>
     </ul>
 </div>
+
+<a href="#up" class="upScroll">up</a>
 
 <!--Start banner-->
 <div class="banner">
@@ -304,7 +307,7 @@
 <!--End location-->
 
 <!--Start price-->
-<section class="price">
+<section class="price" id="price">
     <h2 class="price__h2">цены</h2>
 
     <ul class="priceList flex">
@@ -347,7 +350,7 @@
 <!--End price-->
 
 <!--Start location-->
-<section class="location">
+<section class="location" id="location">
     <h2 class="price__h2">Наши локации</h2>
 
     <ul class="locationList flex">
@@ -618,7 +621,7 @@
 <!--End questions-->
 
 <!--Start toBook-->
-<section class="toBook">
+<section class="toBook" id="toBook">
     <h2 class="toBookMobil__title">Забронируйте sup-прогулку прямо сейчас</h2>
     <div class="toBookIn flex">
         <div class="toBookLeft">
@@ -670,15 +673,20 @@
                     <a href="#" class="blockCheckbox__href">Политика конфиденциальности</a>
                 </label>
 
-                <button type="submit" class="toBookForm__submit flex" aria-label="Забронировать">Забронировать</button>
+                <button type="submit" class="toBookForm__submit flex" data-fancybox="" data-src="#hidden-content" aria-label="Забронировать">Забронировать</button>
             </div>
         </form>
     </div>
 </section>
 <!--End toBook-->
 
+<div class="toBookFormPopup" style="display: none;" id="hidden-content">
+    <h3>Забронировать</h3>
+    <p>Наш менеджер с Вами в ближайшее время</p>
+</div>
+
 <!--Start about-->
-<section class="about">
+<section class="about" id="about">
     <div class="aboutContent flex">
         <div class="aboutLeft">
             <div class="swiper mySwiper">
@@ -1041,7 +1049,7 @@
 <!--End news-->
 
 <!--Start footer-->
-<footer class="footer">
+<footer class="footer" id="contact">
     <div class="footerTop">
         <div class="footerTopIn flex">
             <div class="footerTopLeft">
@@ -1090,6 +1098,8 @@
 <script src="js/calendar.js"></script>
 <script src="js/tel.js"></script>
 <script src="js/multi-selects.js"></script>
+<script src="js/fancybox.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
