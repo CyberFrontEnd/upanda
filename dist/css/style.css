@@ -905,6 +905,7 @@ Start footer
 End footer
 ############*/
 .mobilBtn {
+  top: 30px;
   width: 30px;
   background: none;
   border-top: 3px solid #a7a761;
@@ -1112,7 +1113,7 @@ End footer
   max-width: 200px;
   width: 100%;
   display: none;
-  z-index: 10000;
+  z-index: 99999999;
 }
 
 .mobilMenuIn li {
